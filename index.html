@@ -44,15 +44,16 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
-  </div>
-  <div class="navbar-menu">
+  </div> -->
+
+  <!-- <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <a class="navbar-item" href="https://keunhong.com">
       <span class="icon">
@@ -60,7 +61,7 @@
       </span>
       </a>
 
-      <!-- <div class="navbar-item has-dropdown is-hoverable">
+      <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More Research
         </a>
@@ -78,11 +79,11 @@
             PhotoShape
           </a>
         </div>
-      </div> -->
+      </div> 
     </div>
 
-  </div>
-</nav>
+  </div> -->
+<!-- </nav> -->
 
 
 <section class="hero">
@@ -94,7 +95,7 @@
             3D Flower Reconstruction</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Bhasura Gunawardhana</a><sup>1</sup></span>
+              <a >Bhasura Gunawardhana</a><sup>1</sup></span>
             <!-- <span class="author-block">
               <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
             <span class="author-block">
@@ -119,59 +120,7 @@
             <!-- <span class="author-block"><sup>2</sup>Google Research</span> -->
           </div>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <!-- <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a> -->
-              </span>
-              <span class="link-block">
-                <!-- <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a> -->
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <!-- <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a> -->
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <!-- <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a> -->
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <!-- <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
-            </div>
-
-          </div>
+          
         </div>
       </div>
     </div>
@@ -253,7 +202,7 @@
 </section> -->
 
 
-<section class="section">
+<section class="hero teaser">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -261,9 +210,9 @@
         <h2 class="title is-3">Problem Summary</h2>
         <div class="content has-text-justified">
           <p>
-            Flowers have intricate three-dimensional (3D) structures that play vital roles in ecological and evolutionary processes such as pollination, 
-            species differentiation, and reproductive adaptation. However, most morphological studies still rely on two-dimensional representations, 
-            limiting the accuracy of structural analysis. Traditional 3D reconstruction methods like photogrammetry and micro-computed tomography (micro-CT) 
+            Flowers have intricate three dimensional (3D) structures that play vital roles in ecological and evolutionary processes such as pollination, 
+            species differentiation, and reproductive adaptation. However, most morphological studies still rely on 2D representations, 
+            limiting the accuracy of structural analysis. Traditional 3D reconstruction methods like photogrammetry and micro-computed tomography (micro CT) 
             offer partial solutions but come with significant drawbacks such as high cost, complex setup, limited color fidelity, and incompatibility with in-field imaging.
           </p>
           <p>
@@ -297,43 +246,223 @@
 <section class="section">
   <div class="container is-max-desktop">
 
-    <!-- <div class="columns is-centered"> -->
+     <div class="columns is-centered"> 
 
       <!-- Visual Effects. -->
-      <!-- <div class="column">
+      <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3">Previous Work</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            Traditional techniques for 3D flower modeling primarily include micro-computed tomography(micro CT) and photogrammetry:
+            Micro CT scanning, used in studies such as Dellinger et al. (2019), provides high-resolution reconstructions of internal and external 
+             floral structures. However, it does not preserve color, involves destructive sampling, and requires specialized equipment, making it inaccessible for in field digitization.
+            ABoth methods are limited by high cost, infrastructure needs, and lack of portability, making them impractical for large scale or on-site botanical documentation, 
+            particularly for fragile floral structures that degrade quickly.
           </p>
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/microct.mp4"
+                      type="video/mp4">
+            </video>
+          <p>
+            Photogrammetry, as demonstrated by Leménager et al. (2023), uses structured image capture (DSLR camera, turntable, controlled lighting)
+            to generate 3D models. While it captures both shape and color, it is time-consuming, expensive, and unsuitable for field deployment due
+            to its reliance on controlled environments and extensive manual processing.
+          </p>
+
+          <img src="./static/images/previouswork1.jpeg"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+          
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
+            <source src="./static/videos/photgr.mp4"
                     type="video/mp4">
           </video>
         </div>
-      </div> -->
+      </div> 
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
-      <!-- <div class="column">
-        <h2 class="title is-3">Matting</h2>
+       <div class="column">
+        <h2 class="title is-3">Related Work</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              Recent advances in neural 3D reconstruction offer promising alternatives to traditional approaches:
+              Neuralangelo (Li et al., 2023) is a learning-based neural surface reconstruction method that can generate high fidelity 3D geometry from posed images. It achieves fine detail but is computationally intensive and primarily evaluated under lab-like, static settings.
+              3D Gaussian Splatting (3DGS) and 2DGS (Huang et al., 2024) are efficient neural techniques for geometry aware radiance field rendering. These methods allow for fast, high-quality reconstructions with significantly reduced training time compared to NeRF style models.
+
+              While these methods have demonstrated strong performance in structured, well-lit scenes with clean inputs, their application to micro-structured biological targets like flowers, especially under field conditions with smartphone cameras has not been explored. 
+              This project bridges that gap by evaluating how well these neural methods perform in realistic, low-resource settings and by identifying adaptations required for modeling delicate floral traits in 3D.
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
+            <h2>Candidates: Neural Reconstruction Methods</h2>
+              <ul>
+                <li><strong>NeuralAngelo</strong>  Detailed reconstructions, high training time</li>
+                <li><strong>3DGS</strong>  Acceptable reconstructions, low training time</li>
+                <li><strong>2DGS</strong>  Acceptable reconstructions, low training time</li>
+              </ul>
+
+              <table>
+                <caption>Chamfer Distance and Time Comparison</caption>
+                <thead>
+                  <tr>
+                    <th>Method</th>
+                    <th>Chamfer Distance (CD) ↓</th>
+                    <th>Time ↓</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>NeRF [22]</td>
+                    <td>1.49</td>
+                    <td>–</td>
+                  </tr>
+                  <tr>
+                    <td>VolSDF [41]</td>
+                    <td>0.86</td>
+                    <td>–</td>
+                  </tr>
+                  <tr>
+                    <td>NeuS [36]</td>
+                    <td>0.84</td>
+                    <td>–</td>
+                  </tr>
+                  <tr>
+                    <td>HF-NeuS [38]</td>
+                    <td>0.77</td>
+                    <td>–</td>
+                  </tr>
+                  <tr>
+                    <td>RegSDF [45]</td>
+                    <td>0.72</td>
+                    <td>–</td>
+                  </tr>
+                  <tr>
+                    <td>NeuralWarp [31]</td>
+                    <td>0.68</td>
+                    <td>–</td>
+                  </tr>
+                  <tr>
+                    <td>AG</td>
+                    <td>0.88</td>
+                    <td>–</td>
+                  </tr>
+                  <tr>
+                    <td>AG+P</td>
+                    <td>0.73</td>
+                    <td>–</td>
+                  </tr>
+                  <tr>
+                    <td>NG</td>
+                    <td>0.65</td>
+                    <td>–</td>
+                  </tr>
+                  <tr>
+                    <td><strong>NG+P (NeuralAngelo, Ours)</strong></td>
+                    <td><strong>0.61</strong></td>
+                    <td><strong>~30 h</strong></td>
+                  </tr>
+                  <tr>
+                    <td>3DGS (Kerbl et al. 2023)</td>
+                    <td>1.96</td>
+                    <td>11.2 m</td>
+                  </tr>
+                  <tr>
+                    <td>SuGaR (Guédon & Lepetit 2023)</td>
+                    <td>1.33</td>
+                    <td>~1 h</td>
+                  </tr>
+                  <tr>
+                    <td>2DGS-15k (Ours)</td>
+                    <td>0.83</td>
+                    <td>5.5 m</td>
+                  </tr>
+                  <tr>
+                    <td>2DGS-30k (Ours)</td>
+                    <td>0.80</td>
+                    <td>10.9 m</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p><em>Chamfer Distance (CD):</em> Measures shape dissimilarity between point clouds (lower is better). Time to train models is approximated.</p>
           </div>
 
         </div>
       </div>
-    </div> -->
+    </div> 
     <!--/ Matting. -->
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Description of Work</h2>
+        <div class="content has-text-justified">
+          <ul>
+            <li><strong>Literature Review and Method Selection</strong>
+              <ul>
+                <li>Identified and selected three neural reconstruction methods: <strong>Neuralangelo</strong>, <strong>3DGS</strong>, and <strong>2DGS</strong>.</li>
+              </ul>
+            </li>
+          
+            <li><strong>Data Collection</strong>
+              <ul>
+                <li>Collected image and video data from:
+                  <ul>
+                    <li>Publicly available flower datasets (e.g., <em>Morphosource</em>).</li>
+                    <li><strong>Smartphone-based captures</strong> in natural lighting conditions.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          
+            <li><strong>Preprocessing</strong>
+              <ul>
+                <li>Used <strong>COLMAP</strong> to estimate camera poses and generate sparse 3D reconstructions as input for neural models.</li>
+              </ul>
+            </li>
+          
+            <li><strong>Implementation and Configuration</strong>
+              <ul>
+                <li><strong>3DGS</strong>: Successfully installed, configured, and tested.</li>
+                <li><strong>Neuralangelo</strong>: Environment set up and training initiated.</li>
+                <li><strong>2DGS</strong>: Setup currently in progress.</li>
+              </ul>
+            </li>
+          
+            <li><strong>Initial Testing</strong>
+              <ul>
+                <li><strong>3DGS</strong> successfully produced textured 3D flower models from smartphone video with minimal training time.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/ Re-rendering. -->
+
+      </div>
+    </div>
+
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Data Pre Processing</h2>
+        <div class="content has-text-justified">
+          COLMAP estimates camera poses(in the wild/field consumer level phone camera) from field images and generates a sparse 3D structure for initializing neural reconstruction.
+
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="100%">
+            <source src="./static/videos/colmap.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!--/ Re-rendering. -->
+
+      </div>
+    </div>
 
     <!-- Animation. -->
     <div class="columns is-centered">
@@ -397,6 +526,73 @@
       </div>
     </div>
     <!--/ Animation. -->
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Analysis of Work</h2>
+        <div class="content has-text-justified">
+          New Results
+          This study is one of the first to apply neural reconstruction methods to micro-structured biological samples such as flowers using 
+          field captured smartphone imagery. It demonstrates the feasibility of using 3DGS for detailed flower modeling without expensive lab setups.
+
+          Meeting Goals
+          Initial goals were partially met: 3DGS was successfully tested, and Neuralangelo training has begun. Delays in hardware availability 
+          and long training times affected the ability to complete Neuralangelo and 2DGS experiments during the initial phase.
+        </div>
+        <!--/ Re-rendering. -->
+
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Analysis of Work</h2>
+        <div class="content has-text-justified">
+          <h3> New Results </h3>
+          This study is one of the first to apply neural reconstruction methods to micro-structured biological samples such as flowers using 
+          field captured smartphone imagery. It demonstrates the feasibility of using 3DGS for detailed flower modeling without expensive lab setups.
+
+          <h3>Meeting Goals</h3>
+          Initial goals were partially met: 3DGS was successfully tested, and Neuralangelo training has begun. Delays in hardware availability 
+          and long training times affected the ability to complete Neuralangelo and 2DGS experiments during the initial phase.
+        </div>
+        <!--/ Re-rendering. -->
+
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Future Work</h2>
+        <div class="content has-text-justified">
+          <h3>Short-Term Goals</h3>
+          <ul>
+            <li>Complete <strong>Neuralangelo</strong> and <strong>2DGS</strong> training and evaluation.</li>
+            <li>Conduct side-by-side comparison of all models using shape fidelity, texture detail, and performance metrics.</li>
+            <li>Validate models using biological benchmarks (e.g., morphometric accuracy).</li>
+          </ul>
+
+          <h3>Long-Term Goals</h3>
+          <ul>
+            <li>Develop a field-ready protocol using smartphones and macro lenses.</li>
+            <li>Publish a 3D flower dataset with taxonomic metadata for research use.</li>
+            <li>Explore fine-tuning neural models specifically for botanical datasets.</li>
+            <li>Contribute to digital herbarium platforms and conservation tools through scalable 3D digitization.</li>
+          </ul>
+
+          <h3>Open Questions</h3>
+          <ul>
+            <li><strong>Scale Adaptability:</strong> How can neural reconstruction methods be adapted to handle the extreme scale and detail required for tiny flowers (e.g., grass inflorescences)?</li>
+            <li><strong>Lighting & Focus Challenges:</strong> Can these models tolerate uneven lighting, depth-of-field issues, or motion blur common in field-based smartphone captures?</li>
+            <li><strong>Training Data Requirements:</strong> What kind of training data or augmentations improve performance for micro-structured biological samples?</li>
+            <li><strong>Field Readiness:</strong> What is the minimal imaging setup (e.g., phone + macro lens) that still yields usable 3D reconstructions in natural conditions?</li>
+            <li><strong>Biological Validation:</strong> How well do the reconstructed models preserve biologically relevant traits for morphometric, ecological, or taxonomic studies?</li>
+          </ul>
+        </div>
+        <!--/ Re-rendering. -->
+
+      </div>
+    </div>
 
 
     <!-- Concurrent Work. -->
